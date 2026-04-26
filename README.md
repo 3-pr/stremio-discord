@@ -50,6 +50,7 @@ The bot acts as a bridge between the Stremio ecosystem and Discord's Go-Live str
 ### 1. Prerequisites
 - **Node.js** v18 or newer.
 - **FFmpeg**: Must be compiled with `libass` (required for subtitles).
+- **Stremio Streaming Server**: A running instance of the Stremio engine (usually port 11470) is **REQUIRED** to resolve stream URLs.
   - **Mac**: `brew tap homebrew-ffmpeg/ffmpeg && brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libass`
   - **Linux/Windows**: Ensure `ffmpeg -version` shows `--enable-libass`.
 
@@ -77,7 +78,6 @@ The bot acts as a bridge between the Stremio ecosystem and Discord's Go-Live str
 - [ ] **Full Stremio Sync**: Real-time sync for libraries, watchlists, and progress with official Stremio accounts.
 - [ ] **Ultra-High Quality**: Future support for 4K streaming and HEVC (H.265) encoding.
 - [ ] **Platform Expansion**: Support for external streaming sources and third-party meta-providers.
-- [ ] **Web Dashboard**: A professional glassmorphic UI to control playback via browser.
 
 ---
 
