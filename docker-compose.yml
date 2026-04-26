@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  stremio-server:
+    image: sleeyax/stremio-service:latest
+    container_name: stremio-server
+    environment:
+      - APP_PORT=11470
+    ports:
+      - "11470:11470"
+    volumes:
+      - stremio-data:/root/.stremio-server
+    restart: unless-stopped
+
+  selfbot:
+    build: .
+    container_name: discord-stremio-selfbot
+    depends_on:
+      - stremio-server
+    env_file:
+      - .env
+    environment:
+      # Override the host for docker networking
+      - STREMIO_HOST=stremio-server
+      - STREMIO_PORT=11470
+    restart: unless-stopped
+
+volumes:
+  stremio-data:

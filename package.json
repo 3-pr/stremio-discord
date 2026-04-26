@@ -1,0 +1,22 @@
+{
+  "name": "discord-stremio-selfbot",
+  "version": "1.0.0",
+  "description": "Discord selfbot for streaming Stremio to Voice Channels via Go Live",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@dank074/discord-video-stream": "^6.0.0",
+    "axios": "^1.6.8",
+    "discord.js-selfbot-v13": "^3.1.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
