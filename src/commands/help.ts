@@ -26,7 +26,7 @@ export async function handleHelp(message: Message) {
 ━━━━━━━━━━━━━━━━━━━━
 🌐 **Project Links:**
 • Website: [3-pr.github.io](https://3-pr.github.io)
-• Project: [3.pr/discord](https://3.pr/discord)
+• Project: [stremio-discord](https://github.com/3-pr/stremio-discord)
   `;
 
   await message.reply(helpText);

@@ -79,14 +79,14 @@ English:
 I am your Stremio selfbot. I bring the cinema experience directly to Discord! 🎬
 • Use \`$help\` to see all commands.
 • Website: [3-pr.github.io](https://3-pr.github.io)
-• Project: [3.pr/discord](https://3.pr/discord)
+• Project: [stremio-discord](https://github.com/3-pr/stremio-discord)
 • Developed by: **YASSER AL-HARBI**
 
 عربي:
 أنا بوت ستريميو الخاص بك. أجلب لك تجربة السينما مباشرة إلى ديسكورد! 🎬
 • استخدم الأمر \`$help\` لرؤية جميع الأوامر.
 • موقعي: [3-pr.github.io](https://3-pr.github.io)
-• رابط المشروع: [3.pr/discord](https://3.pr/discord)
+• رابط المشروع: [stremio-discord](https://github.com/3-pr/stremio-discord)
 • تطوير / **YASSER ALHARBI**
       `;
     await message.reply(welcome);
